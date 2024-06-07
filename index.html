@@ -36,7 +36,6 @@
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.75);
-            /*backdrop-filter: blur(2px);*/
             z-index: -1;
         }
 
@@ -77,8 +76,8 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="blessunleashed.svg" alt="Bless Unleashed Pmang English" height="50"></a>
+            <a class="navbar-brand" >
+                <img src="blessunleashed.svg" alt="Bless Unleashed Pmang English" widht="auto" height="50"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -86,7 +85,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-3">
                     <li class="nav-item">
-                        <a class="nav-link active" href="" data-content="welcome">Welcome</a>
+                        <a class="nav-link active" href="" data-content="welcome">Home</a>
                     </li>
                     <span class="navbar-separator">|</span>
                     <li class="nav-item">
@@ -98,15 +97,18 @@
                     </li>
                     <span class="navbar-separator">|</span>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://discord.com/invite/z5SGJYxg" target="_blank"
-                            rel="noopener noreferrer">Join us on Discord</a>
-                    </li>
-                    <span class="navbar-separator">|</span>
-                    <li class="nav-item">
                         <a class="nav-link" href="https://blessunleashed.pmang.jp/" target="_blank"
                             rel="noopener noreferrer">Official Pmang BU website</a>
                     </li>
-                </ul>
+                </ul>  
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://discord.com/invite/z5SGJYxg"><img src="discord.webp" alt="Bless Unleashed Pmang English" widht="auto" height="50"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/N7Gh0sTT/pmang-bless-unleashed-translation"><img src="github.svg" alt="Bless Unleashed Pmang English" widht="auto" height="50"></a>
+                    </li>
+                </ul>        
             </div>
         </div>
     </nav>
@@ -123,7 +125,7 @@
     <script>
         const contents = {
             welcome: `<section id="welcome" class="my-5"><h2>Pmang released a new Bless Unleashed</h2><p><img src="blessunleashed.svg" width="100%" alt="Pmang Bless Unleashed"></p><p>Here you can follow step to download the game and use my translation</p></section>`,
-            setup: `<section id="setup" class="my-5"><h2>How to Setup</h2><p>Go to the <a href="https://www.pmang.jp/" target="_blank" rel="noopener noreferrer">Pmang Website</a> and create an account</p><p><img src="setup1.png" width="100%"></p><p><img src="setup2.png" width="100%"></p><p>Once your account is created and verified, go to the <a href="https://blessunleashed.pmang.jp/lp" target="_blank" rel="noopener noreferrer">Bless Unleashed Page</a></p><p><img src="setup3.png" width="100%"></p><p><img src="setup4.png" width="100%"></p><p>Click on the green button to download the launcher and install it</p><p><img src="setup5.png" width="100%"></p><p>Then you can run the launcher by clicking the red button, to start the game you have to be logged in and go to the <a href="https://blessunleashed.pmang.jp/gamestart" target="_blank" rel="noopener noreferrer">Gamestart page</a></p><p>If the download speed is too slow, use a VPN or download the game from my <a href="https://drive.google.com/uc?export=download&id=1yag51kn6yXZXqvSLo6ARP48rqw42cvOz " target="_blank" rel="noopener noreferrer">Google Drive</a></p><p>If you download the game from my Google Drive just extract files in C:\\GameOn\\BlessUnleashed\\ (default location, or where your launcher is installed).</p></section>`,
+            setup: `<section id="setup" class="my-5"><h2>How to Setup</h2><p>Go to the <a href="https://www.pmang.jp/" target="_blank" rel="noopener noreferrer">Pmang Website</a> and create an account</p><p><img src="setup1.webp" width="100%"></p><p><img src="setup2.webp" width="100%"></p><p>Once your account is created and verified, go to the <a href="https://blessunleashed.pmang.jp/lp" target="_blank" rel="noopener noreferrer">Bless Unleashed Page</a></p><p><img src="setup3.webp" width="100%"></p><p><img src="setup4.webp" width="100%"></p><p>Click on the green button to download the launcher and install it</p><p><img src="setup5.webp" width="100%"></p><p>Then you can run the launcher by clicking the red button, to start the game you have to be logged in and go to the <a href="https://blessunleashed.pmang.jp/gamestart" target="_blank" rel="noopener noreferrer">Gamestart page</a></p><p>If the download speed is too slow, use a VPN or download the game from my <a href="https://drive.google.com/uc?export=download&id=1yag51kn6yXZXqvSLo6ARP48rqw42cvOz " target="_blank" rel="noopener noreferrer">Google Drive</a></p><p>If you download the game from my Google Drive just extract files in C:\\GameOn\\BlessUnleashed\\ (default location, or where your launcher is installed).</p></section>`,
             translation: `<section id="translation" class="my-5"><h2>English Translation</h2><p>Go to my <a href="https://github.com/N7Gh0sTT/pmang-bless-unleashed-translation" target="_blank" rel="noopener noreferrer">Github Repo</a> and download the .pak file.</p><p>Copy the file in BlessUnleashed\\Bless\\Content\\Paks and you can run the game.</p></section>`
         };
         function loadContent(contentId) {
