@@ -1,5 +1,10 @@
 function initializeErrorsDiv() {
-    fetch('https://secretly-humble-yak.ngrok-free.app/messages')
+    const requestOptions = {
+        headers: {
+            'ngrok-skip-browser-warning': 'true'
+        }
+    };
+    fetch('https://secretly-humble-yak.ngrok-free.app/messages', requestOptions)
         .then(response => response.json())
         .then(messages => {
             const errorMessagesDiv = document.getElementById('errorMessages');
