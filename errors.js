@@ -1,5 +1,5 @@
 function initializeErrorsDiv() {
-    fetch('http://212.227.26.203:3000/messages')
+    fetch('https://212.227.26.203:3000/messages')
         .then(response => response.json())
         .then(messages => {
             const errorMessagesDiv = document.getElementById('errorMessages');

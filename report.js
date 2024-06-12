@@ -7,7 +7,7 @@ function initializeReportForm() {
             const formData = new FormData();
             formData.append('description', document.getElementById('description').value);
             formData.append('screenshot', document.getElementById('screenshot').files[0]);
-            const backendUrl = 'http://212.227.26.203:3000/report';
+            const backendUrl = 'https://212.227.26.203:3000/report';
             fetch(backendUrl, {
                 method: 'POST',
                 body: formData
