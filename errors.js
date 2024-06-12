@@ -1,5 +1,5 @@
 function initializeErrorsDiv() {
-    fetch('https://212.227.26.203:3000/messages')
+    fetch('https://e2d2-212-227-26-203.ngrok-free.app/messages')
         .then(response => response.json())
         .then(messages => {
             const errorMessagesDiv = document.getElementById('errorMessages');
